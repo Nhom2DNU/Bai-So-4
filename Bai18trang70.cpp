@@ -25,21 +25,18 @@ void xuat(int a[][100], int n, int m)
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < m; j++)
-			cout << a[i][j] << "  ";
+			cout << a[i][j] << "\t";
 		cout << "\n\n";
 	}
 }
 int max(int a[][100], int n, int m, int &p, int &q)
 {
-	int KQ = 0; p = 0; q = 0;
+	int KQ = 0;
 	cout << "so max trong cac dong:\n\n";
 	for (int i = 0; i < n; i++)
 	{
 		int s = a[i][0];
-		for (int j = 0; j < m; j++)
-		{
-			if (s < a[i][j])s = a[i][j]; p = i; q = j;
-		}
+		for (int j = 0; j < m; j++)if (s < a[i][j])s = a[i][j];
 		cout << s << "  ";
 		KQ += s;
 	}cout << "\n\n";
