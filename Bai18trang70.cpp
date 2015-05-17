@@ -40,5 +40,6 @@ int max(int a[][100], int n, int m, int &p, int &q)
 		cout << s << "  ";
 		KQ += s;
 	}cout << "\n\n";
+	
 	return KQ;
 }
